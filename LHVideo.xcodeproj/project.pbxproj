@@ -18,6 +18,11 @@
 		B01502B61E569BFF00F3A071 /* JTAPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01502B51E569BFF00F3A071 /* JTAPlayerController.m */; };
 		B01502BB1E569CF400F3A071 /* UIFont+Adaption.m in Sources */ = {isa = PBXBuildFile; fileRef = B01502BA1E569CF400F3A071 /* UIFont+Adaption.m */; };
 		B01502BE1E569D2D00F3A071 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = B01502BD1E569D2D00F3A071 /* UIView+Frame.m */; };
+		B07FAA331E5B07ED001EA519 /* LHPlayFeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07FAA321E5B07ED001EA519 /* LHPlayFeedController.m */; };
+		B07FAA361E5BE5B5001EA519 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B07FAA351E5BE5B5001EA519 /* UIView+AutoLayout.m */; };
+		B07FAA391E5BE6AA001EA519 /* LHPlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B07FAA381E5BE6AA001EA519 /* LHPlayCell.m */; };
+		B07FAA3C1E5BF146001EA519 /* LHVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = B07FAA3B1E5BF146001EA519 /* LHVideo.m */; };
+		B07FAA3F1E5BFBAD001EA519 /* LHVideoList.m in Sources */ = {isa = PBXBuildFile; fileRef = B07FAA3E1E5BFBAD001EA519 /* LHVideoList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,16 @@
 		B01502BA1E569CF400F3A071 /* UIFont+Adaption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Adaption.m"; sourceTree = "<group>"; };
 		B01502BC1E569D2D00F3A071 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		B01502BD1E569D2D00F3A071 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		B07FAA311E5B07ED001EA519 /* LHPlayFeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPlayFeedController.h; sourceTree = "<group>"; };
+		B07FAA321E5B07ED001EA519 /* LHPlayFeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPlayFeedController.m; sourceTree = "<group>"; };
+		B07FAA341E5BE5B5001EA519 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		B07FAA351E5BE5B5001EA519 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		B07FAA371E5BE6AA001EA519 /* LHPlayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPlayCell.h; sourceTree = "<group>"; };
+		B07FAA381E5BE6AA001EA519 /* LHPlayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPlayCell.m; sourceTree = "<group>"; };
+		B07FAA3A1E5BF146001EA519 /* LHVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHVideo.h; sourceTree = "<group>"; };
+		B07FAA3B1E5BF146001EA519 /* LHVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHVideo.m; sourceTree = "<group>"; };
+		B07FAA3D1E5BFBAD001EA519 /* LHVideoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHVideoList.h; sourceTree = "<group>"; };
+		B07FAA3E1E5BFBAD001EA519 /* LHVideoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHVideoList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +126,7 @@
 		B015027F1E569BC700F3A071 /* LHVideo */ = {
 			isa = PBXGroup;
 			children = (
+				B07FAA301E5B07B7001EA519 /* VideoPlayFeed */,
 				B01502B71E569C6F00F3A071 /* Base */,
 				B01502B31E569BF600F3A071 /* FullScreenPlayer */,
 				B01502831E569BC700F3A071 /* AppDelegate.h */,
@@ -164,6 +180,8 @@
 		B01502B71E569C6F00F3A071 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				B07FAA341E5BE5B5001EA519 /* UIView+AutoLayout.h */,
+				B07FAA351E5BE5B5001EA519 /* UIView+AutoLayout.m */,
 				B01502B81E569C8500F3A071 /* UIConstant.h */,
 				B01502B91E569CF400F3A071 /* UIFont+Adaption.h */,
 				B01502BA1E569CF400F3A071 /* UIFont+Adaption.m */,
@@ -171,6 +189,21 @@
 				B01502BD1E569D2D00F3A071 /* UIView+Frame.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		B07FAA301E5B07B7001EA519 /* VideoPlayFeed */ = {
+			isa = PBXGroup;
+			children = (
+				B07FAA311E5B07ED001EA519 /* LHPlayFeedController.h */,
+				B07FAA321E5B07ED001EA519 /* LHPlayFeedController.m */,
+				B07FAA371E5BE6AA001EA519 /* LHPlayCell.h */,
+				B07FAA381E5BE6AA001EA519 /* LHPlayCell.m */,
+				B07FAA3A1E5BF146001EA519 /* LHVideo.h */,
+				B07FAA3B1E5BF146001EA519 /* LHVideo.m */,
+				B07FAA3D1E5BFBAD001EA519 /* LHVideoList.h */,
+				B07FAA3E1E5BFBAD001EA519 /* LHVideoList.m */,
+			);
+			path = VideoPlayFeed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,10 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07FAA391E5BE6AA001EA519 /* LHPlayCell.m in Sources */,
+				B07FAA3F1E5BFBAD001EA519 /* LHVideoList.m in Sources */,
 				B01502BE1E569D2D00F3A071 /* UIView+Frame.m in Sources */,
+				B07FAA361E5BE5B5001EA519 /* UIView+AutoLayout.m in Sources */,
 				B01502B61E569BFF00F3A071 /* JTAPlayerController.m in Sources */,
 				B01502881E569BC700F3A071 /* ViewController.m in Sources */,
 				B01502851E569BC700F3A071 /* AppDelegate.m in Sources */,
+				B07FAA331E5B07ED001EA519 /* LHPlayFeedController.m in Sources */,
+				B07FAA3C1E5BF146001EA519 /* LHVideo.m in Sources */,
 				B01502821E569BC700F3A071 /* main.m in Sources */,
 				B01502BB1E569CF400F3A071 /* UIFont+Adaption.m in Sources */,
 			);
@@ -552,6 +590,7 @@
 				B01502AC1E569BC700F3A071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B01502AD1E569BC700F3A071 /* Build configuration list for PBXNativeTarget "LHVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +599,7 @@
 				B01502AF1E569BC700F3A071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B01502B01E569BC700F3A071 /* Build configuration list for PBXNativeTarget "LHVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +608,7 @@
 				B01502B21E569BC700F3A071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

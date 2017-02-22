@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "JTAPlayerController.h"
+#import "LHPlayFeedController.h"
 
 @interface ViewController ()
 
@@ -19,15 +20,15 @@
     [self presentViewController:player animated:YES completion:nil];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)videoFeed:(id)sender {
+    LHPlayFeedController *player = [[LHPlayFeedController alloc] init];
+    [self presentViewController:player animated:YES completion:nil];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 

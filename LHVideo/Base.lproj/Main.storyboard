@@ -29,11 +29,20 @@
                                     <action selector="fullScreenVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oSt-Y4-r2r"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgv-4x-TIq">
+                                <rect key="frame" x="34" y="66" width="74" height="30"/>
+                                <state key="normal" title="VideoFeed"/>
+                                <connections>
+                                    <action selector="videoFeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kew-JU-STJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ze2-tj-3tG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dxs-rM-ODw"/>
+                            <constraint firstItem="Mgv-4x-TIq" firstAttribute="top" secondItem="ze2-tj-3tG" secondAttribute="bottom" constant="8" id="qHQ-GH-mMs"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ze2-tj-3tG" secondAttribute="leading" id="qpc-Hh-7z7"/>
+                            <constraint firstItem="Mgv-4x-TIq" firstAttribute="centerX" secondItem="ze2-tj-3tG" secondAttribute="centerX" id="vWN-FJ-jzR"/>
                         </constraints>
                     </view>
                 </viewController>
